@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        
+    <center>
+        <div class="container">
+        <div>
+                <img src="foodlogo.jpg" alt="" class="img"> <br>
+                Submit information
+            
+            </div>
+        
+        <label>Name:</label>
+        <input type="text" name="first name" placeholder="Type your name here" />
+        <br />
+  
+        <label>Number:</label>
+        <input type="number" name="number" >
+        <br />
+        <label>Notes</label><br/>
+        <textarea name="" cols="30" rows="3"></textarea>
+        <div class="container2">
+            <div class="buttonno">
+                <a href="index.html">
+                    <button type="button" class="btn btn-outline-danger">
+                    cancel
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">  
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>    
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path></svg>
+                  </button></a>
+            </div>
+            <div class="buttonyes">
+                <a href="mailto:someone@example.com">
+                <button type="button" class="btn btn-outline-success">
+                    Send<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                         <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"></path>
+                         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"></path> </svg>
+                </button></a>
+            </div>
+           
+        </div>
+    </div>
+    </center>
+    </body>
+       
+    <style>
+        .buttonyes{
+            margin-right: 0.7cm;
+            margin-top: 0.7cm;
+        }
+        .buttonno{
+            margin-left: 0.7cm ;
+            margin-top: 0.7cm;
+        }
+        .container2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .img{
+            height: 200px;
+            width: 200px;
+            align-self: center;
+            margin-top: 1.5cm;
+        }
+        body {
+            background-color: #f75e5e;
+        }
+        .container{
+            display: block;
+            height: 550px;
+            width: 400px;
+            background-color: #f6ecf0;
+            border-radius: 0.7cm;
+            margin-top: 1.5cm;}
+    </style>
+</html>
