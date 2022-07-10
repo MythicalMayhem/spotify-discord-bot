@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('./images.jpg');
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .button-9 {
+            color: #fff;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+            font-size: 22px;
+            text-align: center;
+            text-transform: none;
+            height: 100%;
+            width: 70%;
+            background-color: #435cec;
+            cursor: pointer;
+            overflow-wrap: break-word;
+            border-radius: 0.1cm;
+            border-width: 0;
+            padding: 0.4cm 0.1cm;
+            box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+            box-sizing: border-box;
+            transform: translateZ(0);
+            transition: all .4s, box-shadow .35s ease-in;
+        }
+
+        .button-9:hover {
+            box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+        }
+
+        img {
+            margin-top: 4cm;
+            margin-bottom: 1.5cm;
+        }
+
+        #here {
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="clipboard.png" min-height='100%' alt="clipboard">
+    <button class="button-9" role="button" onclick="copy()">
+        <p id="button-9">
+            Copy To Clipboard!
+        </p>
+        <p id="here"></p>
+    </button>
+    <p></p>
+    <script>
+        var btn = document.getElementsById('button-9')
+        var code = document.getElementById('here')
+        URL = window.location.href
+        //Copied!
+        function copy() {
+            navigator.clipboard.writeText(URL);
+            btn.innerHTML = 'Copied!'
+            code.innerHTML = 'Go back to dicord and paste the link!'
+        }
+    </script>
+</body>
+
+</html>
