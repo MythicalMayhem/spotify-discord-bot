@@ -63,13 +63,14 @@
     </button>
     <p></p>
     <script>
-        var btn = document.getElementById('button-9')
-        var code = document.getElementById('here')
-        URL = window.location.href
         function copy() {
-            navigator.clipboard.writeText(URL);
-            btn.innerHTML = 'Copied!'
-            code.innerHTML = 'Go back to dicord and paste the link!'
+            navigator.clipboard.writeText(window.location.href).then(function () {
+                document.getElementById('button-9').innerHTML = 'Copied!'
+                document.getElementById('here').innerHTML = 'Go back to dicord and paste the link!'
+            }, function (err) {
+                prompt('could not copy text please select and copy it manually ');
+                document.getElementById('here').innerHTML = window.location.href
+            });
         }
     </script>
 </body>
