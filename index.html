@@ -63,10 +63,9 @@
     </button>
     <p></p>
     <script>
-        var btn = document.getElementsById('button-9')
+        var btn = document.getElementById('button-9')
         var code = document.getElementById('here')
         URL = window.location.href
-        //Copied!
         function copy() {
             navigator.clipboard.writeText(URL);
             btn.innerHTML = 'Copied!'
