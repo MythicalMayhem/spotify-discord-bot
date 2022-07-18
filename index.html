@@ -16,7 +16,11 @@
             flex-direction: column;
 
         }
-
+        .warn {
+            color:"red";
+            font-size:20px;
+            font-weight:500;
+        }
         .button-9 {
             color: #fff;
             font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
@@ -60,13 +64,14 @@
             Copy To Clipboard!
         </p>
         <p id="here"></p>
+        <p class="warn">DO NOT SHARE THE LINK WITH ANYONE ELSE<p>
     </button>
     <p></p>
     <script>
         function copy() {
             navigator.clipboard.writeText(window.location.href).then(function () {
                 document.getElementById('button-9').innerHTML = 'Copied!'
-                document.getElementById('here').innerHTML = 'Go back to discord and paste the link!'
+                document.getElementById('here').innerHTML = "Go back to discord and paste the link in the bot's dms!"
             }, function (err) {
                 prompt('could not copy text please select and copy it manually ');
                 document.getElementById('here').innerHTML = window.location.href
