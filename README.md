@@ -31,7 +31,8 @@ git clone https://github.com/MythicalMayhem/spotify-discord-bot && cd spotify-di
 pip install -r requirements.txt 
 ```
 #### 3. add .env keys
-![Screenshot 2023-09-20 213445](https://github.com/MythicalMayhem/spotify-discord-bot/assets/72671232/d21fc9ae-39b8-4548-9cac-7914added925)
+![Screenshot 2023-09-21 002808](https://github.com/MythicalMayhem/spotify-discord-bot/assets/72671232/7167f55e-01df-4d2f-843e-fc2c0da289bd)
+
 
 #### 4. Start bot
 
